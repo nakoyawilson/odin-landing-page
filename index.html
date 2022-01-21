@@ -1,64 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Odin Landing Page</title>
-</head>
+  </head>
 
-<body>
-    <nav>
-        <p>Header Logo</p>
-        <a href="">header link one</a>
-        <a href="">header link two</a>
-        <a href="">header link three</a>
-    </nav>
-    <main>
-        <section>
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is
-                lower contrast</p>
-            <button>Sign up</button>
-            <img src="" alt="This is a placeholder for an image">
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <nav class="nav-bar">
+          <div class="logo-cotainer">
+            <span class="logo">Header Logo</span>
+          </div>
+          <div class="navigation">
+            <div class="hamburger-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#e5e7eb"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"
+                />
+              </svg>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-link"><a href="">header link one</a></li>
+              <li class="nav-link"><a href="">header link two</a></li>
+              <li class="nav-link"><a href="">header link three</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="hero">
+          <div class="hero-text-container">
+            <h1 class="main-heading">This website is awesome</h1>
+            <p class="hero-secondary-text">
+              This website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button class="hero-button">Sign up</button>
+          </div>
+          <div class="hero-image-container">
+            <img
+              src="images/hero-image.jpg"
+              class="hero-image"
+              alt="A black and brown puppy laying on a colorful mat"
+            />
+          </div>
         </section>
-        <section>
-            <h2>Some random information</h2>
+      </div>
+    </header>
+    <main class="main-section">
+      <section clas="information">
+        <div class="container">
+          <h2 class="subheading">Some random information.</h2>
+          <div class="information-grid">
             <div>
-                <img src="" alt="image here">
-                <p>this is some subtext under an illustration or image</p>
+              <img
+                src="images/info1.jpg"
+                alt="A light brown puppy walking in front of a black coffee table"
+                class="information-image"
+              />
+              <p class="information-paragraph">
+                this is some subtext under an illustration or image
+              </p>
             </div>
             <div>
-                <img src="" alt="image here">
-                <p>this is some subtext under an illustration or image</p>
+              <img
+                src="images/info2.jpg"
+                alt="A white and brown puppy laying on its back"
+                class="information-image"
+              />
+              <p class="information-paragraph">
+                this is some subtext under an illustration or image
+              </p>
             </div>
             <div>
-                <img src="" alt="image here">
-                <p>this is some subtext under an illustration or image</p>
+              <img
+                src="images/info3.jpg"
+                alt="A light brown puppy standing in grass"
+                class="information-image"
+              />
+              <p class="information-paragraph">
+                this is some subtext under an illustration or image
+              </p>
             </div>
             <div>
-                <img src="" alt="image here">
-                <p>this is some subtext under an illustration or image</p>
+              <img
+                src="images/info4.jpg"
+                alt="A white and gray puppy sleeping on carpet"
+                class="information-image"
+              />
+              <p class="information-paragraph">
+                this is some subtext under an illustration or image
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial">
+        <div class="container">
+          <p class="testimonial-quote">
+            This is an inspiring quote, or a testimonial from a customer. Maybe
+            it's just filling up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.
+          </p>
+          <p class="testimonial-attribution">-Thor, God of Thunder</p>
+        </div>
+      </section>
+      <div class="container">
+        <section class="call-to-action">
+          <div>
+            <h2 class="cta-heading">Call to action! It's time!</h2>
+            <p class="cta-paragraph">
+              Sign up for our product by clicking that button right over there!
+            </p>
+          </div>
+          <div>
+            <button class="cta-button">Sign up</button>
+          </div>
         </section>
-        <section>
-            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
-                people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <p>-Thor, God of Thunder</p>
-        </section>
-        <section>
-            <h2>Call to action! It's time!</h2>
-            <p>Sign up for our product by clicking that button right over there!</p>
-            <button>Sign up</button>
-        </section>
+      </div>
     </main>
-    <footer>
+    <footer class="footer-section">
+      <div class="container">
         Copyright &copy; The Odin Project
         <script type="text/javascript">
-            document.write(new Date().getFullYear());
+          document.write(new Date().getFullYear());
         </script>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
